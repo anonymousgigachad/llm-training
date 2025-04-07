@@ -1,0 +1,20 @@
+torch>=2.0.0
+transformers>=4.38.0
+datasets>=2.14.0
+accelerate>=0.23.0
+bitsandbytes>=0.41.0
+# huggingface_hub is usually a dependency of transformers, but good to list
+huggingface_hub>=0.17.0
+tokenizers>=0.14.0
+tqdm
+scipy
+numpy
+requests
+# Adding peft explicitly as it's used in the script
+peft>=0.5.0
+# Adding sentencepiece as it's often needed by tokenizers
+sentencepiece
+# Adding Jinja2 for template formatting (sometimes needed by datasets/transformers)
+Jinja2
+# Adding tensorboard for logging (if using report_to="tensorboard")
+tensorboard
